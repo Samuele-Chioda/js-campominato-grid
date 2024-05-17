@@ -4,32 +4,45 @@
     box-sizing:border-box;
 }
 
+header{
+    padding:5rem;
+}
+
 body{
     background-color:brown;
+}
+
+main{
+    padding-bottom:4rem;
 }
 
 h1{
     text-align:center;
 }
 
-main{
-}
-
 div#grid{
     display:flex;
     flex-wrap:wrap;
-    width:800px;
-    height:800px;
+    width:1000px;
+    height:1000px;
     margin:0 auto;
 }
 
 div#grid,
 div#grid article.square{
-    border: 1px solid black;
+    border: 2px solid black;
 }
-
 
 div#grid > article.square{
     width:calc(100% / 10);
     height:calc(100% / 10);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:2rem;
+}
+
+div#grid > article.square.active{
+    background-color: blue;
+    color:white;
 }
