@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:brown;
+}
+
+h1{
+    text-align:center;
+}
+
+main{
+}
+
+div#grid{
+    display:flex;
+    flex-wrap:wrap;
+    width:800px;
+    height:800px;
+    margin:0 auto;
+}
+
+div#grid,
+div#grid article.square{
+    border: 1px solid black;
+}
+
+
+div#grid > article.square{
+    width:calc(100% / 10);
+    height:calc(100% / 10);
+}
